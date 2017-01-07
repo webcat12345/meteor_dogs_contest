@@ -1,0 +1,39 @@
+<template name="imageUploader">
+  <div class="container">
+  <div class="col-md-6 col-md-offset-3">
+   <h1>Submit Image Below</h1>
+   <span style="font-size:15px; margin-left:10px;">
+    <div class="form-group">
+      <label for="selectFile">Select</label>
+      <input type="file" class="uploadFile" id="uploadFile">
+
+    </div>
+
+    </span>
+  </div>
+</div>
+
+{{isUploading}}
+
+<div class="container">
+
+    <div class="row">
+
+          {{#each url}}
+          <div class="col-sm-6 col-md-4" style="float:left;">
+        <div class="thumbnail">
+          <img src="{{imageurl}}" alt="...">
+        </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+
+
+     <!-- end of new code -->
+
+
+</div>
+
+</template>
